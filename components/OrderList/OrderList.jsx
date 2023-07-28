@@ -146,7 +146,7 @@ export default function OrderList() {
           <FlatList
             data={orders}
             renderItem={({ item }) => <OrderCard item={item} />}
-            keyExtractor={(item) => item.id.toString()} // Convert id to string as keyExtractor expects a string
+            keyExtractor={(item) => item.id.toString()}
           />
         </View>
       </View>
